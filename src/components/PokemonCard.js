@@ -2,17 +2,15 @@ import React from 'react'
 
 export default function PokemonCard({pokemon, addToTeam}) {
     
-    // const styleCircle = () => {
-    //     if (pokemon.types.type === "grass"){
-    //         background:"lightgreen"
-    //     }
-    // }
     function handleClick(event) {
-        addToTeam(pokemon)
+        if (addToTeam){
+            addToTeam(pokemon)
+        } else {
+        }
     }
 
     return (
-        <div className="circle">
+        <div className="sprite-circle">
             <img className="sprite" 
                 src={pokemon.sprites.front_default} 
                 alt="pokemon sprite"
@@ -20,5 +18,6 @@ export default function PokemonCard({pokemon, addToTeam}) {
                 onClick={ handleClick }
             />
         </div>
+    
     )
 }

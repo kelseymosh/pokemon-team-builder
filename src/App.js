@@ -15,6 +15,11 @@ class App extends Component {
       this.setState({ team:[...this.state.team, addedPokemon] })
   }
 
+  removeFromTeam = (pokemonToRemove) => {
+    let updatedTeam = this.state.team.filter(pokemon => pokemon.id !== pokemonToRemove.id)
+      this.setState({ team:updatedTeam })
+  }
+
   componentDidMount(){
     let fetches = [];
     let fetchPokemon = () => {
@@ -37,7 +42,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-          <TeamContainer team={this.state.team} />
+          <TeamContainer team={this.state.team} removeFromTeam={this.removeFromTeam} />
           <PokemonContainer pokemon={this.state.pokemon} addToTeam={this.addToTeam} />
       </div>
     );

@@ -1,16 +1,15 @@
 import React from 'react'
-import PokemonCard from '../components/PokemonCard'
+import TeamPokemonCard from '../components/TeamPokemonCard'
 
 export default function TeamContainer(props) {
     
     const pokemon = props.team.map(pokemon => {
         return(
-            <PokemonCard pokemon={pokemon} />
+            <TeamPokemonCard className="team-pokemon" pokemon={pokemon} removeFromTeam={props.removeFromTeam} />
         )
     })
     return (
-        <div className="pokemon-team">
-            Your Pokemon Team
+        <div className="pokemon-team-container">
             { pokemon }
         </div>
     )
