@@ -1,11 +1,18 @@
 import { Component } from "react";
 import './App.css';
 import PokemonContainer from "./containers/PokemonContainer";
+import TeamContainer from "./containers/TeamContainer"
 
 class App extends Component {
   
   state = {
-    pokemon: []
+    pokemon: [],
+    team:[]
+  }
+
+  addToTeam = (addedPokemon) => {
+    if(!this.state.team.find(pokemon => pokemon.id === addedPokemon.id) && this.state.team.length <= 5)
+      this.setState({ team:[...this.state.team, addedPokemon] })
   }
 
   componentDidMount(){
@@ -30,7 +37,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-          <PokemonContainer pokemon={this.state.pokemon} />
+          <TeamContainer team={this.state.team} />
+          <PokemonContainer pokemon={this.state.pokemon} addToTeam={this.addToTeam} />
       </div>
     );
     }
