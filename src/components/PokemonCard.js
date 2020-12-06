@@ -35,7 +35,7 @@ export default function PokemonCard({pokemon, addToTeam}) {
             return "#ce5b0e"
         }
         if ( pokemon.types[0].type.name === "flying" ){
-            return "#c4d4e3"
+            return "#d0ecfd"
         }
         if ( pokemon.types[0].type.name === "ghost" ){
             return "#c1c0da"

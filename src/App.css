@@ -36,7 +36,6 @@
 }
 
 .team-circle {
-  background: lightgray;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -57,7 +56,18 @@
   height: 75px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: space-around;
+  flex-direction: column;
 }
 
+.type-image-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -15%;
+}
+
+.type-image, .secondary-type-image {
+  max-height: auto;
+  max-width: 45%;
+}

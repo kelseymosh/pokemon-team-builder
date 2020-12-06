@@ -5,7 +5,13 @@ export default function TeamContainer(props) {
     
     const pokemon = props.team.map(pokemon => {
         return(
-            <TeamPokemonCard className="team-pokemon" pokemon={pokemon} key={pokemon.id} removeFromTeam={props.removeFromTeam} />
+            <TeamPokemonCard 
+                className="team-pokemon" 
+                pokemon={pokemon} 
+                key={pokemon.id} 
+                removeFromTeam={props.removeFromTeam}
+                // styleCircleColor={props.styleCircleColor} 
+            />
         )
     })
     return (

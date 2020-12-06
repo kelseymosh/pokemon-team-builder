@@ -42,7 +42,11 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-          <TeamContainer team={this.state.team} removeFromTeam={this.removeFromTeam} />
+          <TeamContainer 
+            team={this.state.team} 
+            removeFromTeam={this.removeFromTeam} 
+            // styleCircleColor={this.styleCircleColor} 
+          />
           <PokemonContainer pokemon={this.state.pokemon} addToTeam={this.addToTeam} />
       </div>
     );
