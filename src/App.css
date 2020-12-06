@@ -1,3 +1,7 @@
+.App {
+  background-color: #f5f3ef;
+}
+
 .pokemon-container {
   display: flex;
   flex-direction: row;
@@ -27,12 +31,12 @@
 
 .pokemon-team-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 5%;
 }
 
 .team-circle {
@@ -51,7 +55,6 @@
 
 .name-and-type {
   border-radius: 30px;
-  background: lightgray;
   width: 150px;
   height: 75px;
   display: flex;
@@ -70,4 +73,19 @@
 .type-image {
   max-height: auto;
   max-width: 45%;
+}
+
+
+
+.team-analysis-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.team-analysis-type-image {
+  height: auto;
+  width: 80px;
+  margin: 5px;
 }

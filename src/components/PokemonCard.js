@@ -11,7 +11,7 @@ export default function PokemonCard({pokemon, addToTeam}) {
 
     function styleCircleColor() {
         if ( pokemon.types[0].type.name === "grass" ){
-            return "#8da780"
+            return "#009966"
         }
         if ( pokemon.types[0].type.name === "bug" ){
             return "rgb(193,205,50)"
@@ -47,7 +47,7 @@ export default function PokemonCard({pokemon, addToTeam}) {
             return "#c4dce3"
         } 
         if ( pokemon.types[0].type.name === "normal" ){
-            return "#f8f9fc"
+            return "#cccccc"
         } 
         if ( pokemon.types[0].type.name === "poison" ){
             return "#d3a4c9"

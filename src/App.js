@@ -1,7 +1,14 @@
 import { Component } from "react";
 import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Accordion from "react-bootstrap/Accordion"
+import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
+
 import PokemonContainer from "./containers/PokemonContainer";
 import TeamContainer from "./containers/TeamContainer"
+import TeamAnalysisContainer from "./containers/TeamAnalysisContainer"
 
 class App extends Component {
   
@@ -47,6 +54,18 @@ class App extends Component {
             removeFromTeam={this.removeFromTeam} 
             // styleCircleColor={this.styleCircleColor} 
           />
+            <Accordion>
+              <Card>
+                <Card.Header>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                    +
+                  </Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="0">
+                  <Card.Body> <TeamAnalysisContainer /> </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+            </Accordion>
           <PokemonContainer pokemon={this.state.pokemon} addToTeam={this.addToTeam} />
       </div>
     );
