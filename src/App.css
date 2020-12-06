@@ -1,37 +1,29 @@
-
 .pokemon-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10%;
-}
-
-.pokemon-team-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding-top: 5%;
-  padding-left: 10%;
   padding-right: 10%;
-}
-
-.pokemon-team-art {
-  height: 100px;
-  width: 100px;
-}
-
-.name-and-type {
-  text-align: center;
+  padding-left: 10%;
+  padding-bottom: 10%;
 }
 
 .sprite-circle {
   display: flex;
-  justify-content: space-around;
   background: lightblue;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin: 2px;
+  margin: 0.5%;
+}
+
+.circle-grass {
+  display: flex;
+  background: lightgreen;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0.5%;
 }
 
 .sprite {
@@ -39,3 +31,43 @@
   height: 50px;
   width: 50px;
 }
+
+
+
+
+.pokemon-team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.team-circle {
+  background: lightgray;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.pokemon-team-art {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
+
+.name-and-type {
+  border-radius: 30px;
+  background: lightgray;
+  width: 150px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+

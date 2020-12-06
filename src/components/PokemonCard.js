@@ -9,8 +9,15 @@ export default function PokemonCard({pokemon, addToTeam}) {
         }
     }
 
+    function styleCircleColor() {
+        if ( pokemon.types[0].type.name === "grass" ){
+            return "lightgreen"
+        } else {
+        }
+    }
+
     return (
-        <div className="sprite-circle">
+        <div className="sprite-circle" style={ {background:`${styleCircleColor()}`} } >
             <img className="sprite" 
                 src={pokemon.sprites.front_default} 
                 alt="pokemon sprite"
