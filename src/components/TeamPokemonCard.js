@@ -64,121 +64,140 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
         }
     }
 
-    function typeImageSrc() {
+    const grassImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/a/a5/GrassIC.png" />
+    const bugImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/b/bd/BugIC.png" />
+    const darkImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/e/e3/DarkIC.png" />
+    const dragonImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/c/c3/DragonIC.png" />
+    const electricImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/e/ea/ElectricIC.png" />
+    const fairyImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/3/31/FairyIC.png" />
+    const fightingImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/9/9b/FightingIC.png" />
+    const fireImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/9/9f/FireIC.png" />
+    const flyingImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/d/dc/FlyingIC.png" />
+    const ghostImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/c/c3/GhostIC.png"/>
+    const groundImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/8/87/GroundIC.png" />
+    const iceImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/8/86/IceIC.png" />
+    const normalImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/0/0f/NormalIC.png" />
+    const poisonImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/8/86/PoisonIC.png" />
+    const psychicImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/f/f8/PsychicIC.png" />
+    const rockImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/e/e6/RockIC.png"/>
+    const steelImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/7/7e/SteelIC.png" />
+    const waterImage = <img className="type-image" src="https://cdn.bulbagarden.net/upload/b/b0/WaterIC.png" />
+
+    function typeImage() {
         if ( pokemon.types[0].type.name === "grass" ){
-            return "https://cdn.bulbagarden.net/upload/a/a5/GrassIC.png"
+            return grassImage
         }
         if ( pokemon.types[0].type.name === "bug" ){
-            return "https://cdn.bulbagarden.net/upload/b/bd/BugIC.png"
+            return bugImage
         }
         if ( pokemon.types[0].type.name === "dark" ){
-            return "https://cdn.bulbagarden.net/upload/e/e3/DarkIC.png"
+            return darkImage
         }
         if ( pokemon.types[0].type.name === "dragon" ){
-            return "https://cdn.bulbagarden.net/upload/c/c3/DragonIC.png"
+            return dragonImage
         }
         if ( pokemon.types[0].type.name === "electric" ){
-            return "https://cdn.bulbagarden.net/upload/e/ea/ElectricIC.png"
+            return electricImage
         }
         if ( pokemon.types[0].type.name === "fairy" ){
-            return "https://cdn.bulbagarden.net/upload/3/31/FairyIC.png"
+            return fairyImage
         }
         if ( pokemon.types[0].type.name === "fighting" ){
-            return "https://cdn.bulbagarden.net/upload/9/9b/FightingIC.png"
+            return fightingImage
         }
         if ( pokemon.types[0].type.name === "fire" ){
-            return "https://cdn.bulbagarden.net/upload/9/9f/FireIC.png"
+            return fireImage
         }
         if ( pokemon.types[0].type.name === "flying" ){
-            return "https://cdn.bulbagarden.net/upload/d/dc/FlyingIC.png"
+            return flyingImage
         }
         if ( pokemon.types[0].type.name === "ghost" ){
-            return "https://cdn.bulbagarden.net/upload/c/c3/GhostIC.png"
+            return ghostImage
         } 
         if ( pokemon.types[0].type.name === "ground" ){
-            return "https://cdn.bulbagarden.net/upload/8/87/GroundIC.png"
+            return groundImage
         } 
         if ( pokemon.types[0].type.name === "ice" ){
-            return "https://cdn.bulbagarden.net/upload/8/86/IceIC.png"
+            return iceImage
         } 
         if ( pokemon.types[0].type.name === "normal" ){
-            return "https://cdn.bulbagarden.net/upload/0/0f/NormalIC.png"
+            return normalImage
         } 
         if ( pokemon.types[0].type.name === "poison" ){
-            return "https://cdn.bulbagarden.net/upload/8/86/PoisonIC.png"
+            return poisonImage
         } 
         if ( pokemon.types[0].type.name === "psychic" ){
-            return "https://cdn.bulbagarden.net/upload/f/f8/PsychicIC.png"
+            return psychicImage
         } 
         if ( pokemon.types[0].type.name === "rock" ){
-            return "https://cdn.bulbagarden.net/upload/e/e6/RockIC.png"
+            return rockImage
         } 
         if ( pokemon.types[0].type.name === "steel" ){
-            return "https://cdn.bulbagarden.net/upload/7/7e/SteelIC.png"
+            return steelImage
         } 
         if ( pokemon.types[0].type.name === "water" ){
-            return "https://cdn.bulbagarden.net/upload/b/b0/WaterIC.png"
+            return waterImage
         } else {
         }
     }
 
-    function secondaryTypeImageSrc() {
-        if ( pokemon.types.length == 1 ) {
+    function secondaryTypeImage() {
+        if ( pokemon.types.length === 1 ) {
             return null
         }
         if ( pokemon.types[1].type.name === "grass" ){
-            return "https://cdn.bulbagarden.net/upload/a/a5/GrassIC.png"
+            return grassImage
         }
         if ( pokemon.types[1].type.name === "bug" ){
-            return "https://cdn.bulbagarden.net/upload/b/bd/BugIC.png"
+            return bugImage
         }
         if ( pokemon.types[1].type.name === "dark" ){
-            return "https://cdn.bulbagarden.net/upload/e/e3/DarkIC.png"
+            return darkImage
         }
         if ( pokemon.types[1].type.name === "dragon" ){
-            return "https://cdn.bulbagarden.net/upload/c/c3/DragonIC.png"
+            return dragonImage
         }
         if ( pokemon.types[1].type.name === "electric" ){
-            return "https://cdn.bulbagarden.net/upload/e/ea/ElectricIC.png"
+            return electricImage
         }
         if ( pokemon.types[1].type.name === "fairy" ){
-            return "https://cdn.bulbagarden.net/upload/3/31/FairyIC.png"
+            return fairyImage
         }
         if ( pokemon.types[1].type.name === "fighting" ){
-            return "https://cdn.bulbagarden.net/upload/9/9b/FightingIC.png"
+            return fightingImage
         }
         if ( pokemon.types[1].type.name === "fire" ){
-            return "https://cdn.bulbagarden.net/upload/9/9f/FireIC.png"
+            return fireImage
         }
         if ( pokemon.types[1].type.name === "flying" ){
-            return "https://cdn.bulbagarden.net/upload/d/dc/FlyingIC.png"
+            return flyingImage
         }
         if ( pokemon.types[1].type.name === "ghost" ){
-            return "https://cdn.bulbagarden.net/upload/c/c3/GhostIC.png"
+            return ghostImage
         } 
         if ( pokemon.types[1].type.name === "ground" ){
-            return "https://cdn.bulbagarden.net/upload/8/87/GroundIC.png"
+            return groundImage
         } 
         if ( pokemon.types[1].type.name === "ice" ){
-            return "https://cdn.bulbagarden.net/upload/8/86/IceIC.png"
+            return iceImage
         } 
         if ( pokemon.types[1].type.name === "normal" ){
-            return "https://cdn.bulbagarden.net/upload/1/0f/NormalIC.png"
+            return normalImage
         } 
         if ( pokemon.types[1].type.name === "poison" ){
-            return "https://cdn.bulbagarden.net/upload/8/86/PoisonIC.png"
+            return poisonImage
         } 
         if ( pokemon.types[1].type.name === "psychic" ){
-            return "https://cdn.bulbagarden.net/upload/f/f8/PsychicIC.png"
+            return psychicImage
         } 
         if ( pokemon.types[1].type.name === "rock" ){
-            return "https://cdn.bulbagarden.net/upload/e/e6/RockIC.png"
+            return rockImage
         } 
         if ( pokemon.types[1].type.name === "steel" ){
-            return "https://cdn.bulbagarden.net/upload/7/7e/SteelIC.png"
+            return steelImage
         } 
         if ( pokemon.types[1].type.name === "water" ){
-            return "https://cdn.bulbagarden.net/upload/b/b0/WaterIC.png"
+            return waterImage
         } 
     }
 
@@ -198,8 +217,8 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
                         {pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}
                     </span>
                     <span className="type-image-div">
-                        <img className="type-image" src={`${typeImageSrc()}`} />
-                        <img className="secondary-type-image" src={`${secondaryTypeImageSrc()}`} />
+                        {typeImage()}
+                        {secondaryTypeImage()}                   
                     </span>
                 </div>
         </div>
