@@ -203,13 +203,12 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
 
 
     return (
-        <div className="team-pokemon-card">
+        <div className="team-pokemon-card" onClick={ handleClick }>
             <div className="team-circle" style={ {background:`${styleCircleColor()}`} }>
                 <img className="pokemon-team-art" 
                     src={pokemon.sprites.other["official-artwork"].front_default} 
                     alt="pokemon official artwork"
-                    key={pokemon.id}
-                    onClick={ handleClick }
+                    key={pokemon.id}    
                 />
             </div>
                 <div className="name-and-type" style={ {background:`${styleCircleColor()}`} }>
