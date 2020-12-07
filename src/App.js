@@ -14,7 +14,7 @@ class App extends Component {
   
   state = {
     pokemon: [],
-    team:[]
+    team:[],
   }
 
   addToTeam = (addedPokemon) => {
@@ -30,7 +30,7 @@ class App extends Component {
   componentDidMount(){
     let fetches = [];
     let fetchPokemon = () => {
-      for (let i = 1; i <= 300; i++) {
+      for (let i = 1; i <= 600; i++) {
         fetches.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`))      
       }
     }
@@ -52,7 +52,6 @@ class App extends Component {
           <TeamContainer 
             team={this.state.team} 
             removeFromTeam={this.removeFromTeam} 
-            // styleCircleColor={this.styleCircleColor} 
           />
             <Accordion>
               <Card>

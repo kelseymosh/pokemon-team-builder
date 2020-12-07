@@ -68,14 +68,14 @@ export default function PokemonCard({pokemon, addToTeam}) {
     }
 
     return (
-        <div className="sprite-circle" style={ {background:`${styleCircleColor()}`} } >
+        <span className="sprite-circle" style={ {background:`${styleCircleColor()}`} } >
             <img className="sprite" 
                 src={pokemon.sprites.front_default} 
                 alt="pokemon sprite"
                 key={pokemon.id}
                 onClick={ handleClick }
             />
-        </div>
+        </span>
     
     )
 }

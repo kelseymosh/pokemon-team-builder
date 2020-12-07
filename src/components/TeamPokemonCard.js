@@ -206,20 +206,20 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
         <div className="team-pokemon-card">
             <div className="team-circle" style={ {background:`${styleCircleColor()}`} }>
                 <img className="pokemon-team-art" 
-                    src={pokemon.sprites.other.dream_world.front_default} 
+                    src={pokemon.sprites.other["official-artwork"].front_default} 
                     alt="pokemon official artwork"
                     key={pokemon.id}
                     onClick={ handleClick }
                 />
             </div>
                 <div className="name-and-type" style={ {background:`${styleCircleColor()}`} }>
-                    <span className="pokemon-name">
+                    <div className="pokemon-name">
                         {pokemon.name[0].toUpperCase() + pokemon.name.substring(1)}
-                    </span>
-                    <span className="type-image-div">
+                    </div>
+                    <div className="type-image-div">
                         {typeImage()}
                         {secondaryTypeImage()}                   
-                    </span>
+                    </div>
                 </div>
         </div>
     )
