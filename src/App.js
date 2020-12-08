@@ -31,13 +31,9 @@ class App extends Component {
       }
     }
     fetchPokemon()
-    // console.log("Promise.all(fetches)", Promise.all(fetches))
+    
     Promise.all(fetches).then(responses => {
-      // console.log("responses", responses) 
       const parsedResponses = responses.map(response => response.json())
-
-      // console.log("parsed responses", parsedResponses)
-      // console.log("Promise.all(parsedResponses)", Promise.all(parsedResponses))
       Promise.all(parsedResponses).then(pokemon => this.setState({ pokemon }))
     }) 
   }

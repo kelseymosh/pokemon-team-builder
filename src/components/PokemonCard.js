@@ -11,7 +11,7 @@ export default function PokemonCard({pokemon, addToTeam}) {
 
     function styleCircleColor() {
         if ( pokemon.types[0].type.name === "grass" ){
-            return "#A7DB8D"
+            return "#a8e4a0"
         }
         if ( pokemon.types[0].type.name === "bug" ){
             return "rgb(193,205,50)"
@@ -32,7 +32,7 @@ export default function PokemonCard({pokemon, addToTeam}) {
             return "#ce8e89"
         }
         if ( pokemon.types[0].type.name === "fire" ){
-            return "#F5AC78"
+            return "#f4a166"
         }
         if ( pokemon.types[0].type.name === "flying" ){
             return "#d0ecfd"
@@ -56,13 +56,13 @@ export default function PokemonCard({pokemon, addToTeam}) {
             return "#ffb7cb"
         } 
         if ( pokemon.types[0].type.name === "rock" ){
-            return "#A28D5B"
+            return "#aa9667"
         } 
         if ( pokemon.types[0].type.name === "steel" ){
             return "#d2d1d6"
         } 
         if ( pokemon.types[0].type.name === "water" ){
-            return "#9DB7F5"
+            return "#9db0f5"
         } else {
         }
     }

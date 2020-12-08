@@ -48,7 +48,7 @@ export default function TeamContainer(props) {
             </div>
                 <Accordion className="accordion">
                     <Card>
-                        <Card.Header className="accordion-image" alt="lilycove-city">
+                        <Card.Header className="accordion-image" alt="route-117">
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                 <img
                                     className="plus-icon"
