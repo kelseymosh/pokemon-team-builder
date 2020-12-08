@@ -22,31 +22,39 @@ export default function TeamContainer(props) {
 
     const popover = (
         <Popover id="popover-basic">
-            <Popover.Title as="h3">Popover right</Popover.Title>
-            <Popover.Content>
-                And here's some <strong>amazing</strong> content. It's very engaging.
-                right?
-            </Popover.Content>
+            <Popover.Title as="h3">
+                <img className="pokemon-logo" alt="pokemon-logo" src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png"/>
+                <strong>Team Builder</strong>
+            </Popover.Title>
+                <Popover.Content>
+                    <p><strong>Welcome Trainer!</strong> Add a Pokemon to your team by clicking on a sprite. 
+                    To remove from your team, click on the larger image.</p> 
+                </Popover.Content>
         </Popover>
     );
 
     return (
         <section className="sticky-container">
             <div className="pokemon-team-container">
-            <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-                <img 
-                    className="pokeball-logo" 
-                    src="https://lh3.googleusercontent.com/proxy/3msSqEOqREOZU-QHn_XrdTvUfjRqmQ7xg0-uojwAQbUjPxDSnyztHLzWzgVVEfUZwpLStre7zqiAT4_hzFvodVIRiLZxZOmfXsG2PSMutJagGql2I333uOhWzQiiaBxePQ" 
-                    variant="success"
-                />
-            </OverlayTrigger>
+                <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+                    <img 
+                        className="pokeball-logo" 
+                        alt="pokeball-logo"
+                        src="https://lh3.googleusercontent.com/proxy/3msSqEOqREOZU-QHn_XrdTvUfjRqmQ7xg0-uojwAQbUjPxDSnyztHLzWzgVVEfUZwpLStre7zqiAT4_hzFvodVIRiLZxZOmfXsG2PSMutJagGql2I333uOhWzQiiaBxePQ" 
+                        variant="success"
+                    />
+                </OverlayTrigger>
                     { pokemon }
-                </div>
+            </div>
                 <Accordion className="accordion">
                     <Card>
-                        <Card.Header>
+                        <Card.Header className="accordion-image" alt="lilycove-city">
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                +
+                                <img
+                                    className="plus-icon"
+                                    alt="plus-icon" 
+                                    src="https://icon-library.com/images/plus-sign-icon-png/plus-sign-icon-png-19.jpg"
+                                />
                             </Accordion.Toggle>
                         </Card.Header>
                             <Accordion.Collapse eventKey="0">
