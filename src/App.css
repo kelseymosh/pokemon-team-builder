@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
 .App {
   background-color: #f5f3ef;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .pokemon-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-width: 2px 5px;
   padding-top: 5%;
   padding-right: 10%;
   padding-left: 10%;
@@ -69,11 +73,20 @@ img.sprite:hover, img.pokemon-team-art:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #f5f3ef;
+  background-color:#eff1f5;
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 1%;
+}
+
+.pokeball-logo {
+  width: 100px;
+  height: auto;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  cursor: pointer;
 }
 
 .team-pokemon-card {

@@ -8,7 +8,7 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
 
     function styleCircleColor() {
         if ( pokemon.types[0].type.name === "grass" ){
-            return "#009966"
+            return "#A7DB8D"
         }
         if ( pokemon.types[0].type.name === "bug" ){
             return "rgb(193,205,50)"
@@ -20,16 +20,16 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
             return "#6f83d7"
         }
         if ( pokemon.types[0].type.name === "electric" ){
-            return "#ffdc76"
+            return "#fadf7a"
         }
         if ( pokemon.types[0].type.name === "fairy" ){
             return "#f3ded7"
         }
         if ( pokemon.types[0].type.name === "fighting" ){
-            return "#e2dbcb"
+            return "#ce8e89"
         }
         if ( pokemon.types[0].type.name === "fire" ){
-            return "#ce5b0e"
+            return "#F5AC78"
         }
         if ( pokemon.types[0].type.name === "flying" ){
             return "#d0ecfd"
@@ -38,19 +38,19 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
             return "#c1c0da"
         } 
         if ( pokemon.types[0].type.name === "ground" ){
-            return "#caab8f"
+            return "#e7cd88"
         } 
         if ( pokemon.types[0].type.name === "ice" ){
-            return "#c4dce3"
+            return "#b0e0e6"
         } 
         if ( pokemon.types[0].type.name === "normal" ){
-            return "#cccccc"
+            return "#dadac6"
         } 
         if ( pokemon.types[0].type.name === "poison" ){
             return "#d3a4c9"
         } 
         if ( pokemon.types[0].type.name === "psychic" ){
-            return "#fae6fa"
+            return "#ffb7cb"
         } 
         if ( pokemon.types[0].type.name === "rock" ){
             return "#A28D5B"
@@ -59,7 +59,7 @@ export default function TeamPokemonCard({pokemon, removeFromTeam}) {
             return "#d2d1d6"
         } 
         if ( pokemon.types[0].type.name === "water" ){
-            return "#9cd3db"
+            return "#9DB7F5"
         } else {
         }
     }

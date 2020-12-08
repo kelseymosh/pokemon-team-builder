@@ -7,7 +7,7 @@ import PokemonContainer from "./containers/PokemonContainer";
 import TeamContainer from "./containers/TeamContainer"
 
 class App extends Component {
-  
+
   state = {
     pokemon: [],
     team:[],
@@ -26,7 +26,7 @@ class App extends Component {
   componentDidMount(){
     let fetches = [];
     let fetchPokemon = () => {
-      for (let i = 1; i <= 600; i++) {
+      for (let i = 1; i <= 895; i++) {
         fetches.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`))      
       }
     }
