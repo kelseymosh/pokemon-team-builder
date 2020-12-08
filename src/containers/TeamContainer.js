@@ -22,13 +22,20 @@ export default function TeamContainer(props) {
 
     const popover = (
         <Popover id="popover-basic">
-            <Popover.Title as="h3">
+            {/* <Popover.Title as="h3">
                 <img className="pokemon-logo" alt="pokemon-logo" src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png"/>
                 <strong>Team Builder</strong>
-            </Popover.Title>
+            </Popover.Title> */}
                 <Popover.Content>
-                    <p><strong>Welcome Trainer!</strong> Add a Pokemon to your team by clicking on a sprite. 
+                    <p><strong>Welcome Trainer!</strong>
+                        <span className="trainer-sprite-container">
+                            <img alt="trainer sprite" className="trainer-sprite" src="https://www.spriters-resource.com/resources/sheet_icons/8/8141.png"/>
+                            <img alt="trainer sprite" className="trainer-sprite" src="https://www.spriters-resource.com/resources/sheet_icons/8/8142.png"/>
+                        </span>
+                    </p> 
+                    <p>Add a Pokemon to your team by clicking on a sprite. 
                     To remove from your team, click on the larger image.</p> 
+                    <p>Team Type analysis <strong>coming soon!</strong></p>
                 </Popover.Content>
         </Popover>
     );
@@ -52,7 +59,7 @@ export default function TeamContainer(props) {
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                 <img
                                     className="plus-icon"
-                                    alt="plus-icon" 
+                                    alt="plus icon" 
                                     src="https://icon-library.com/images/plus-sign-icon-png/plus-sign-icon-png-19.jpg"
                                 />
                             </Accordion.Toggle>

@@ -88,6 +88,15 @@ img.sprite:hover, img.pokemon-team-art:hover {
   cursor: pointer;
 }
 
+.trainer-sprite-container {
+  display: flex;
+  display: row;
+}
+
+.trainer-sprite {
+  max-width: 90px;
+}
+
 .pokemon-logo {
   width: 90px;
   height: 75px;
@@ -133,6 +142,7 @@ img.sprite:hover, img.pokemon-team-art:hover {
 .plus-icon {
   width: 20px;
   height: auto;
+  opacity: 1 !important;
 }
 
 
