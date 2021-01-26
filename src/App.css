@@ -88,6 +88,10 @@ img.sprite:hover, img.pokemon-team-art:hover {
   cursor: pointer;
 }
 
+.popover-content {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 .trainer-sprite-container {
   display: flex;
   display: row;
@@ -142,7 +146,7 @@ img.sprite:hover, img.pokemon-team-art:hover {
 .plus-icon {
   width: 20px;
   height: auto;
-  opacity: 1 !important;
+  opacity: 100% !important;
 }
 
 

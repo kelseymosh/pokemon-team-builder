@@ -1,6 +1,6 @@
 import TeamPokemonCard from '../components/TeamPokemonCard'
 import TeamAnalysisContainer from "../containers/TeamAnalysisContainer"
-
+import Pokeball from "../images/Pokeball.png"
 import Accordion from "react-bootstrap/Accordion"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
@@ -26,7 +26,7 @@ export default function TeamContainer(props) {
                 <img className="pokemon-logo" alt="pokemon-logo" src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png"/>
                 <strong>Team Builder</strong>
             </Popover.Title> */}
-                <Popover.Content>
+                <Popover.Content className="popover-content">
                     <p><strong>Welcome Trainer!</strong>
                         <span className="trainer-sprite-container">
                             <img alt="trainer sprite" className="trainer-sprite" src="https://www.spriters-resource.com/resources/sheet_icons/8/8141.png"/>
@@ -47,7 +47,7 @@ export default function TeamContainer(props) {
                     <img 
                         className="pokeball-logo" 
                         alt="pokeball-logo"
-                        src="https://lh3.googleusercontent.com/proxy/3msSqEOqREOZU-QHn_XrdTvUfjRqmQ7xg0-uojwAQbUjPxDSnyztHLzWzgVVEfUZwpLStre7zqiAT4_hzFvodVIRiLZxZOmfXsG2PSMutJagGql2I333uOhWzQiiaBxePQ" 
+                        src={ Pokeball }
                         variant="success"
                     />
                 </OverlayTrigger>
