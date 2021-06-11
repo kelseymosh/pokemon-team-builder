@@ -7,7 +7,6 @@ import Popover from "react-bootstrap/Popover"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 
 export default function TeamContainer(props) {
-
     const pokemon = props.team.map(pokemon => {
         return(
             <TeamPokemonCard 
@@ -24,8 +23,8 @@ export default function TeamContainer(props) {
             <Popover.Content className="popover-content">
                 <p><strong>Welcome Trainer!</strong>
                     <span className="trainer-sprite-container">
-                        <img alt="trainer sprite" className="trainer-sprite" src="https://www.spriters-resource.com/resources/sheet_icons/8/8141.png"/>
-                        <img alt="trainer sprite" className="trainer-sprite" src="https://www.spriters-resource.com/resources/sheet_icons/8/8142.png"/>
+                        <img alt="trainer sprite" className="trainer-sprite" src="/assets/femaleSprite.png"/>
+                        <img alt="trainer sprite" className="trainer-sprite" src="/assets/maleSprite.png"/>
                     </span>
                 </p> 
                 <p>Add a Pokemon to your team by clicking on a sprite. 
