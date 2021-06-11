@@ -136,7 +136,7 @@ img.sprite:hover, img.pokemon-team-art:hover {
 }
 
 .accordion-image {
-  background-image: url("https://cdn.bulbagarden.net/upload/thumb/0/07/Hoenn_Route_117_RS.png/800px-Hoenn_Route_117_RS.png");
+  background-image: url("./images/route117.png");
   background-position: 0% 11%;
   background-size: 100%;
   max-width: 100%;
@@ -161,9 +161,6 @@ img.sprite:hover, img.pokemon-team-art:hover {
   max-height: auto;
   max-width: 45%;
 }
-
-
-
 
 .team-analysis-container {
   display: flex;
