@@ -7,7 +7,6 @@ import PokemonContainer from "./containers/PokemonContainer";
 import TeamContainer from "./containers/TeamContainer"
 
 class App extends Component {
-
   state = {
     pokemon: [],
     team:[],
@@ -45,7 +44,10 @@ class App extends Component {
             team={this.state.team} 
             removeFromTeam={this.removeFromTeam} 
           />
-          <PokemonContainer pokemon={this.state.pokemon} addToTeam={this.addToTeam} />
+          <PokemonContainer 
+            pokemon={this.state.pokemon} 
+            addToTeam={this.addToTeam} 
+          />
       </div>
     );
     }
