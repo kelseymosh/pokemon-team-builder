@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function PokemonCard({pokemon, addToTeam}) {
-    
     function handleClick(event) {
         if (addToTeam){
             addToTeam(pokemon)

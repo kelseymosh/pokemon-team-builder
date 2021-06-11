@@ -1,8 +1,6 @@
 import { Component } from "react";
 import './App.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import PokemonContainer from "./containers/PokemonContainer";
 import TeamContainer from "./containers/TeamContainer"
 
